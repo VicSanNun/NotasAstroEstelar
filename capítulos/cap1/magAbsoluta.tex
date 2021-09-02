@@ -1,0 +1,23 @@
+Como a magnitude aparente é baseada no fluxo, ela depende da distância do astro. Porém, isso não nos dá o brilho intríseco do astro. Para encontrá-lo, utilizamos a \textit{magnitude absoluta}. A magnitude absoluta considera o astro a 10 parsecs de distância e pode ser definida como:
+
+$$M = -2,5 \ log[F(10pc)] + cte$$
+
+Temos $m - M$ como a diferença entre a magnitude aparente e absoluta e podemos definir como:
+
+$$m - M = -2,5 \ log[F(r)] + 2,5 \ log[F(10pc)] = -2,5 \ log \left[ \frac{F(r)}{F(10pc)} \right]$$
+
+Podemos fazer:
+
+$$F = \frac{L}{4 \pi R^{2}} \Rightarrow m - M = -2,5 \ log \left[ \frac{\frac{L}{4 \pi r^{2}}}{\frac{L}{4 \pi (10pc)^{2}}}  \right] = -2,5 \ log \left[ \frac{100 \ pc^{2}}{r^{2}} \right]$$
+
+Além disso, sabemos:
+
+$$log \ \left[ \frac{10 pc}{r} \right]^{2} = 2 [log(10 pc) - log(r)] = 2(1 - log(r))$$
+
+Então:
+
+$$m - M = -2,5 \times 2(1-log(r)) = -5 + 5 \ log(r) \Rightarrow m - M = 5 \ log(r) - 5$$
+
+Onde $r$ tem que ser medido em parsecs. Além disso podemos extrair:
+
+$$r(pc) = 10^{\frac{m - M + 5}{5}}$$
